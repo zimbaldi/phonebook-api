@@ -35,6 +35,7 @@ class ContactController {
 
         contact.apply {
             this.name = newContact.name
+            this.phoneNumber = newContact.phoneNumber
             this.email = newContact.email
         }
         return repository.save(contact)

@@ -17,7 +17,10 @@ class Contact(
     @field:Size(min = 3, max = 50, message = "Name must be bigger than 3 char.")
     var name: String,
 
-    @field:NotNull
+    @NotNull
+    var phoneNumber: String,
+
+    @NotNull
     @field:Email
     var email: String
 
